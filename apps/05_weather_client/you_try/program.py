@@ -1,5 +1,6 @@
 import requests
 
+
 def main():
     # print the header
     print_header()
