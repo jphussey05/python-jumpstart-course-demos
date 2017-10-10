@@ -1,3 +1,11 @@
+# Inspiration and base code for this app is sourced from
+# Michael Kennedy's Talk Python to Me training. Specifically, this
+# app can be found in the Python Jumpstart by Building 10 Apps.
+# If you'd like to see more, go to www.talkpython.fm
+# REQUESTS DOCS: http://docs.python-requests.org/en/master/user/quickstart/
+# BEAUTIFUL SOUP DOCS: https://www.crummy.com/software/BeautifulSoup/bs4/doc/#quick-start
+
+
 def print_header():
     print('--------------------------------')
     print('          WEATHER APP')
