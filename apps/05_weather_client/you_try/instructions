@@ -1,9 +1,12 @@
 Web Scraping In-class Exercise
 
+
 - instructor
     - (5m) talks about web scraping
         - what is it?
         - when do we use it?
+            - https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags
+
         - challenges to it?
     - (2m) demo the app
     - (3m) talks ethics with scraping
@@ -11,11 +14,13 @@ Web Scraping In-class Exercise
         - show them what not to do?
     - (3m) explore wunderground.com
     - (5m) go back to the code and build a request
+        - http://docs.python-requests.org/en/master/
         - introduce PyPI?
         - introduce requests module
         - setup the request and show good server status 200
         - print the response.text and limit to first 250 chars...
     - (5m) parse the html response
+        - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
         - hopefully you see how messy web data is now.
         - BeautifulSoup is gonna save the day; pip install it.
         - use the inspect feature to find the city data
