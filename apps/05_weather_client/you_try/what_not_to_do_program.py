@@ -29,22 +29,25 @@ def get_html(zipcode):
     print('Fetching {}'.format(url))
     response = requests.get(url)
 
-    return response.text
+    return response
 
 
 def main():
     print_header()
-    zipcode = input('What zipcode do you want the weather for? ')
+    # zipcode = input('What zipcode do you want the weather for? ')
 
-    html = get_html(zipcode)
-    report = get_weather_from_html(html)
 
-    print('The temp in {} is {} {} and the current condition is {}'.format(
-        report['city'],
-        report['temp'],
-        report['scale'],
-        report['condition']
-    ))
+    zipcodes = ["{:05}".format(i) for i in range(1000, 99999)]
+    for zipcode in zipcodes:
+        html = get_html(zipcode)
+        if html.status_code != 404:
+            report = get_weather_from_html(html.text)
+            print('The temp in {} is {} {} and the current condition is {}'.format(
+                report['city'],
+                report['temp'],
+                report['scale'],
+                report['condition']
+            ))
 
 
 if __name__ == "__main__":

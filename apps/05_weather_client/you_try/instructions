@@ -1,0 +1,27 @@
+Web Scraping In-class Exercise
+
+- instructor
+    - (5m) talks about web scraping
+        - what is it?
+        - when do we use it?
+        - challenges to it?
+    - (2m) demo the app
+    - (3m) talks ethics with scraping
+        - use APIs when you're building real apps
+        - show them what not to do?
+    - (3m) explore wunderground.com
+    - (5m) go back to the code and build a request
+        - introduce PyPI?
+        - introduce requests module
+        - setup the request and show good server status 200
+        - print the response.text and limit to first 250 chars...
+    - (5m) parse the html response
+        - hopefully you see how messy web data is now.
+        - BeautifulSoup is gonna save the day; pip install it.
+        - use the inspect feature to find the city data
+        - attempting to isolate the city data based on the element we found
+    - (20m) LET CADETS DO THE TEMP/UNITS/CONDITIONS on their own for about 25 minutes
+    - (10m) bring them back and talk about how to return the data
+        - we'll use a dictionary where the key is the name of the data category
+        - print with the dictionary
+        - show them the what not to do if there is time
